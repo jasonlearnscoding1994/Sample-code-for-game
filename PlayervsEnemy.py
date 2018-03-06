@@ -1,4 +1,4 @@
-# Example from Chapter 3, adapted magic8Ball function into a game that takes in a roll value.
+# Adapted magic8Ball function, from Chapeter 3 Automate the Boring Stuff, into a game that takes in a roll value.
 import random
 playerHealth = 20
 enemyHealth = 10
