@@ -1,4 +1,7 @@
 # Adapted magic8Ball function, from Chapter 3 Automate the Boring Stuff, into a game that takes in a roll value.
+# This game starts off with a player encounter with an enemy and asks for inputs from the user.
+# The goal of the game is to defeat the enemy before it kills you.
+
 import random
 playerHealth = 20
 enemyHealth = 10
@@ -30,7 +33,7 @@ def check2(word,list):
         check2.y += 1
     else:
         print('Invalid actions.')
-        
+
 while True:
     print("You encounter an enemy. What will you do?")
     action = input()
@@ -68,7 +71,7 @@ def takeDamage(damageRoll):
         return "For a brief moment you felt cold steel. Warm blood gushes out from your deep wound."
     elif damageRoll == 6:
         return "Critical hit. The enemy's sword slids between the gap in your armor, impaling you in your heart. You passed out from shock and to never wake up again."
-    
+
 atk = random.randint(1,5)
 print(dealDamage(atk))
 print("Damage taken by enemy: %d " % atk)
@@ -97,4 +100,4 @@ print("")
 ##    dealDamage(atk)
 ##    if newEnemyHealth == 0:
 ##        print('YOU ARE VICTORIOUS!')
-##    
+##
