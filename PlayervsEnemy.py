@@ -86,7 +86,7 @@ while True: # Loop is used to deal damage to player and enemy using a randomly g
     if check.y == 1: # Check if correct "run" action has been entered. If so, break loop.
         break
     else: # If not, run damage calculation.
-        dmg = random.randint(1,6) # Damage taken is taken from randomly generated number from 1 to 5.
+        dmg = random.randint(1,6) # Damage taken is taken from randomly generated number from 1 to 6.
         print(takeDamage(dmg))
         print("Damage taken by player: %d " % dmg)
         newPlayerHealth = playerHealth - dmg
